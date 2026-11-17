@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premier League Hub | Thế Giới Bóng Đá Ngoại Hạng Anh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-badge">PL</span>
+        <div class="brand-text">
+          <span class="brand-title">PREMIER LEAGUE</span>
+          <span class="brand-sub">Vietnam Fan Hub</span>
+        </div>
+      </a>
+
+      <!-- Nút mở menu trên điện thoại -->
+      <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Mở menu điều hướng" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Điều hướng chính">
+        <ul>
+          <li><a href="index.html" class="active-link">Trang chủ</a></li>
+          <li><a href="#clubs">Câu lạc bộ</a></li>
+          <li><a href="#standings">Bảng xếp hạng</a></li>
+          <li><a href="ghhiban.html">⚽ Vua phá lưới</a></li>
+          <li class="mobile-only-cta"><a href="ghhiban.html" class="btn-live">🏆 Top Ghi Bàn</a></li>
+        </ul>
+      </nav>
+
+      <a href="ghhiban.html" class="btn-live desktop-only-cta">🏆 Top Ghi Bàn</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-info">
+          <span class="pill-tag">SUPER SUNDAY • VÒNG 12</span>
+          <h1>Giải Bóng Đá Hấp Dẫn Nhất Hành Tinh</h1>
+          <p>
+            Cập nhật thông tin chi tiết về các câu lạc bộ Ngoại Hạng Anh, bảng xếp hạng thời gian thực và cuộc đua Chiếc Giày Vàng gay cấn.
+          </p>
+          <div class="hero-btns">
+            <a href="#clubs" class="btn btn-primary">Khám phá các đội bóng</a>
+            <a href="ghhiban.html" class="btn btn-outline">Xem BXH Ghi Bàn &rarr;</a>
+          </div>
+        </div>
+
+        <!-- TRẬN CẦU TÂM ĐIỂM -->
+        <div class="match-card">
+          <div class="match-header">
+            <span>TRẬN CẦU TÂM ĐIỂM</span>
+            <span class="live-indicator">23:30 • Chủ Nhật</span>
+          </div>
+
+          <div class="match-teams">
+            <div class="team-box">
+              <div class="crest arsenal">
+                <img src="ghiban/Arsenal_FC.svg.webp" alt="Arsenal" class="match-crest-img" onerror="this.style.display='none'">
+              </div>
+              <strong>Arsenal</strong>
+              <span>Hạng 1 • 28 điểm</span>
+            </div>
+
+            <div class="vs-box">
+              <span class="vs-text">VS</span>
+              <span class="stadium-name">Sân Emirates</span>
+            </div>
+
+            <div class="team-box">
+              <div class="crest liverpool">
+                <img src="ghiban/Liverpool_FC.svg.webp" alt="Liverpool" class="match-crest-img" onerror="this.style.display='none'">
+              </div>
+              <strong>Liverpool</strong>
+              <span>Hạng 2 • 27 điểm</span>
+            </div>
+          </div>
+
+          <div class="match-footer">
+            <a href="ghhiban.html" class="btn-remind">
+              ⚽ Xem thống kê chi tiết chân sút
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DANH SÁCH CÂU LẠC BỘ -->
+    <section id="clubs" class="section-block">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="sub-label">CÂU LẠC BỘ TIÊU BIỂU</span>
+            <h2>Các Đội Bóng Ngoại Hạng Anh</h2>
+          </div>
+
+          <div class="search-club">
+            <input type="text" id="clubSearch" placeholder="Tìm tên đội bóng (VD: Arsenal, Chelsea...)" onkeyup="filterClubs()">
+          </div>
+        </div>
+
+        <div class="clubs-grid" id="clubsGrid">
+          <!-- Arsenal -->
+          <article class="club-card" data-name="arsenal pháo thủ">
+            <div class="club-banner" style="background: linear-gradient(135deg, #EF0107, #9C0004);">
+              <img src="ghiban/Arsenal_FC.svg.webp" alt="Arsenal" class="club-logo-img" onerror="this.style.display='none'">
+              <span class="club-code">ARS</span>
+            </div>
+            <div class="club-body">
+              <div class="club-title-row">
+                <h3>Arsenal</h3>
+                <span class="nickname">Pháo Thủ</span>
+              </div>
+              <ul class="club-meta">
+                <li><strong>Sân vận động:</strong> Emirates (60.704 chỗ)</li>
+                <li><strong>HLV trưởng:</strong> Mikel Arteta</li>
+              </ul>
+              <div class="club-form">
+                <span>Phong độ:</span>
+                <i class="win">W</i><i class="win">W</i><i class="draw">D</i><i class="win">W</i><i class="win">W</i>
+              </div>
+            </div>
+          </article>
+
+          <!-- Liverpool -->
+          <article class="club-card" data-name="liverpool lữ đoàn đỏ">
+            <div class="club-banner" style="background: linear-gradient(135deg, #C8102E, #7A0619);">
+              <img src="ghiban/Liverpool_FC.svg.webp" alt="Liverpool" class="club-logo-img" onerror="this.style.display='none'">
+              <span class="club-code">LIV</span>
+            </div>
+            <div class="club-body">
+              <div class="club-title-row">
+                <h3>Liverpool</h3>
+                <span class="nickname">Lữ Đoàn Đỏ</span>
+              </div>
+              <ul class="club-meta">
+                <li><strong>Sân vận động:</strong> Anfield (61.276 chỗ)</li>
+                <li><strong>HLV trưởng:</strong> Arne Slot</li>
+              </ul>
+              <div class="club-form">
+                <span>Phong độ:</span>
+                <i class="win">W</i><i class="win">W</i><i class="win">W</i><i class="loss">L</i><i class="win">W</i>
+              </div>
+            </div>
+          </article>
+
+          <!-- Manchester City -->
+          <article class="club-card" data-name="manchester city man city">
+            <div class="club-banner" style="background: linear-gradient(135deg, #6CABDD, #1C2C5B);">
+              <img src="ghiban/Manchester_City_FC_logo.svg.webp" alt="Man City" class="club-logo-img" onerror="this.style.display='none'">
+              <span class="club-code">MCI</span>
+            </div>
+            <div class="club-body">
+              <div class="club-title-row">
+                <h3>Manchester City</h3>
+                <span class="nickname">The Citizens</span>
+              </div>
+              <ul class="club-meta">
+                <li><strong>Sân vận động:</strong> Etihad (53.400 chỗ)</li>
+                <li><strong>HLV trưởng:</strong> Pep Guardiola</li>
+              </ul>
+              <div class="club-form">
+                <span>Phong độ:</span>
+                <i class="win">W</i><i class="draw">D</i><i class="win">W</i><i class="win">W</i><i class="draw">D</i>
+              </div>
+            </div>
+          </article>
+
+          <!-- Chelsea -->
+          <article class="club-card" data-name="chelsea the blues">
+            <div class="club-banner" style="background: linear-gradient(135deg, #034694, #001B44);">
+              <img src="ghiban/Chelsea_crest.svg (1).webp" alt="Chelsea" class="club-logo-img" onerror="this.style.display='none'">
+              <span class="club-code">CHE</span>
+            </div>
+            <div class="club-body">
+              <div class="club-title-row">
+                <h3>Chelsea</h3>
+                <span class="nickname">The Blues</span>
+              </div>
+              <ul class="club-meta">
+                <li><strong>Sân vận động:</strong> Stamford Bridge (40.341 chỗ)</li>
+                <li><strong>HLV trưởng:</strong> Enzo Maresca</li>
+              </ul>
+              <div class="club-form">
+                <span>Phong độ:</span>
+                <i class="win">W</i><i class="draw">D</i><i class="win">W</i><i class="loss">L</i><i class="win">W</i>
+              </div>
+            </div>
+          </article>
+
+          <!-- Manchester United -->
+          <article class="club-card" data-name="manchester united man utd mu quỷ đỏ">
+            <div class="club-banner" style="background: linear-gradient(135deg, #DA291C, #6B0F09);">
+              <img src="ghiban/Man_Utd_FC_.svg.webp" alt="Man Utd" class="club-logo-img" onerror="this.style.display='none'">
+              <span class="club-code">MUN</span>
+            </div>
+            <div class="club-body">
+              <div class="club-title-row">
+                <h3>Manchester United</h3>
+                <span class="nickname">Quỷ Đỏ</span>
+              </div>
+              <ul class="club-meta">
+                <li><strong>Sân vận động:</strong> Old Trafford (74.310 chỗ)</li>
+                <li><strong>HLV trưởng:</strong> Ruben Amorim</li>
+              </ul>
+              <div class="club-form">
+                <span>Phong độ:</span>
+                <i class="draw">D</i><i class="win">W</i><i class="win">W</i><i class="loss">L</i><i class="win">W</i>
+              </div>
+            </div>
+          </article>
+
+          <!-- Tottenham Hotspur -->
+          <article class="club-card" data-name="tottenham hotspur spurs">
+            <div class="club-banner" style="background: linear-gradient(135deg, #132257, #080E26);">
+              <img src="ghiban/Tottenham_Hotspur_FC.svg.webp" alt="Tottenham" class="club-logo-img" onerror="this.style.display='none'">
+              <span class="club-code">TOT</span>
+            </div>
+            <div class="club-body">
+              <div class="club-title-row">
+                <h3>Tottenham Hotspur</h3>
+                <span class="nickname">Gà Trống</span>
+              </div>
+              <ul class="club-meta">
+                <li><strong>Sân vận động:</strong> Tottenham Hotspur (62.850 chỗ)</li>
+                <li><strong>HLV trưởng:</strong> Ange Postecoglou</li>
+              </ul>
+              <div class="club-form">
+                <span>Phong độ:</span>
+                <i class="win">W</i><i class="loss">L</i><i class="win">W</i><i class="win">W</i><i class="loss">L</i>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BẢNG XẾP HẠNG & LỊCH THI ĐẤU -->
+    <section id="standings" class="section-block bg-alt">
+      <div class="container two-col-layout">
+        <div class="standings-box">
+          <div class="box-header">
+            <h2>Bảng Xếp Hạng</h2>
+            <span>Mùa giải 2026/27</span>
+          </div>
+
+          <div class="table-wrap">
+            <table class="pl-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Câu lạc bộ</th>
+                  <th>Trận</th>
+                  <th>T</th>
+                  <th>H</th>
+                  <th>B</th>
+                  <th>HS</th>
+                  <th>Điểm</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="ucl"><td>1</td><td><strong>Arsenal</strong></td><td>11</td><td>9</td><td>1</td><td>1</td><td>+18</td><td class="pts">28</td></tr>
+                <tr class="ucl"><td>2</td><td><strong>Liverpool</strong></td><td>11</td><td>8</td><td>3</td><td>0</td><td>+16</td><td class="pts">27</td></tr>
+                <tr class="ucl"><td>3</td><td><strong>Manchester City</strong></td><td>11</td><td>8</td><td>2</td><td>1</td><td>+15</td><td class="pts">26</td></tr>
+                <tr class="ucl"><td>4</td><td><strong>Chelsea</strong></td><td>11</td><td>6</td><td>3</td><td>2</td><td>+9</td><td class="pts">21</td></tr>
+                <tr class="uel"><td>5</td><td><strong>Manchester United</strong></td><td>11</td><td>6</td><td>2</td><td>3</td><td>+5</td><td class="pts">20</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="scroll-hint">&larr; Vuốt ngang bảng để xem đầy đủ thông số &rarr;</p>
+        </div>
+
+        <div id="fixtures" class="fixtures-box">
+          <div class="box-header">
+            <h2>Lịch Thi Đấu Vòng 12</h2>
+            <span>Giờ Việt Nam</span>
+          </div>
+
+          <div class="fixture-list">
+            <div class="fixture-item">
+              <span class="f-time">T7 • 22:00</span>
+              <div class="f-teams"><span>Manchester City</span><span class="f-vs">vs</span><span>Newcastle United</span></div>
+            </div>
+            <div class="fixture-item highlight-fixture">
+              <span class="f-time">CN • 23:30</span>
+              <div class="f-teams"><span>Arsenal</span><span class="f-vs">vs</span><span>Liverpool</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p><strong>PREMIER LEAGUE VIETNAM HUB</strong> — Cổng thông tin bóng đá Ngoại Hạng Anh.</p>
+      <p class="copyright">&copy; 2026 Premier League Hub.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Bật / tắt menu trên điện thoại
+    const menuBtn = document.getElementById('mobileMenuBtn');
+    const mainNav = document.getElementById('mainNav');
+
+    menuBtn.addEventListener('click', () => {
+      const isOpen = mainNav.classList.toggle('open');
+      menuBtn.textContent = isOpen ? '✕' : '☰';
+      menuBtn.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Tự động đóng menu mobile khi bấm vào liên kết
+    mainNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('open');
+        menuBtn.textContent = '☰';
+        menuBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Tìm kiếm câu lạc bộ
+    function filterClubs() {
+      const keyword = document.getElementById('clubSearch').value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.club-card');
+      cards.forEach(card => {
+        const clubName = card.getAttribute('data-name');
+        card.style.display = clubName.includes(keyword) ? 'flex' : 'none';
+      });
+    }
+  </script>
+</body>
+
+</html>
