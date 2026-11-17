@@ -17,10 +17,6 @@ Dự án **Premier League Vietnam Hub** là sản phẩm Bài tập lớn A3 mô
 - **Giao diện Responsive & Hiện đại:** 
   - Sử dụng CSS Grid và Flexbox giúp giao diện hiển thị hoàn hảo trên mọi thiết bị từ máy tính để bàn đến điện thoại di động.
   - Phối màu theo chuẩn nhận diện thương hiệu Ngoại Hạng Anh (`#37003c`, `#00ff85`, `#ff2882`).
-- **Tương tác JavaScript thông minh:**
-  - Bộ lọc tìm kiếm câu lạc bộ tức thì theo tên hoặc biệt danh.
-  - Chức năng tra cứu nhanh chân sút và câu lạc bộ trong danh sách ghi bàn.
-  - Bục vinh danh Top 3 cầu thủ dẫn đầu danh sách Vua phá lưới.
 - **Quản lý tài nguyên hình ảnh:** Tích hợp hệ thống logo câu lạc bộ và ảnh chân dung cầu thủ kèm cơ chế dự phòng (`onerror`) chống lỗi giao diện khi thiếu tệp.
 
 ## 📁 Cấu trúc thư mục dự án
