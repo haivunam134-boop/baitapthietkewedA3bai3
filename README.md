@@ -7,8 +7,11 @@ Dự án **Premier League Vietnam Hub** là sản phẩm Bài tập lớn A3 mô
 - **Họ và tên:** Vũ Nam Hải
 - **Mã sinh viên:** 2071020062
 - **Chuyên ngành:** Công nghệ Thông tin (CNTT20-04)
-- **Trường:** Đại học Đại Nam 
-
+- **Trường:** Đại học Đại Nam
+- **Link truy cập trực tiếp (URL):** [https://haivunam134-boop.github.io/baitapthietkewedA3bai3/index.html]
+- **hồ sơ git hup page:** [https://github.com/haivunam134-boop]
+-  **trang kết quả:**[https://haivunam134-boop.github.io/baitapthietkewedA3bai3/ghhiban.html]
+-   **mã :**[[https://github.com/haivunam134-boop/baitapthietkewedA3bai3]
 ## 🚀 Các tính năng nổi bật
 - **Hệ thống đa trang (Multi-page):** Liên kết mạch lạc giữa trang chủ (`index.html`) và trang phụ thống kê Vua phá lưới (`ghi-ban.html`) qua thanh điều hướng trực quan.
 - **Giao diện Responsive & Hiện đại:** 
